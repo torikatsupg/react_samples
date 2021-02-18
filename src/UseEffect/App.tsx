@@ -1,5 +1,5 @@
-import { Drag } from "./Drag";
+import { Memo } from "./Memo";
 
 export default function App() {
-  return <Drag/>;
+  return <Memo/>;
 }
