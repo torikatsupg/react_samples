@@ -1,4 +1,3 @@
-import { memoryUsage } from "process";
 import { useMemo, useState } from "react";
 
 export function Memo() {
@@ -11,10 +10,10 @@ export function Memo() {
           width: "200px",
         }}
       >
-        {count}
+        Item
       </p>
-      <MemoUsed count={count} />
-      <MyButton count={count} setCount={setCount} />
+      <MemoUsed count={count}/>
+      <MyButton count={count} setCount={setCount}/>
     </div>
   );
 }
@@ -22,7 +21,6 @@ export function Memo() {
 function MemoUsed({ count }: { count: number }) {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const memoCount = useMemo(() => count, []);
-  console.log("render");
 
   return (
     <button

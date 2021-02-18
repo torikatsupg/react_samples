@@ -1,5 +1,7 @@
-import { Memo } from "./Memo";
+import { DragWithMemo } from "./DragWithMemo";
 
 export default function App() {
-  return <Memo/>;
+  return (
+    <DragWithMemo/>
+  );
 }
