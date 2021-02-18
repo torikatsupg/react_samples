@@ -1,5 +1,5 @@
-import { Cleanup } from "./Cleanup";
+import { Drag } from "./Drag";
 
 export default function App() {
-  return <Cleanup/>;
+  return <Drag/>;
 }
